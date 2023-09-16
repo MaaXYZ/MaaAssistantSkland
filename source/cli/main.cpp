@@ -164,6 +164,16 @@ MaaSize get_device_index(const MaaSize& device_size)
     return index;
 }
 
+json::value skland_param() {
+    json::value param;
+    auto& diff = param["diff_task"];
+    auto& close_skland_enabled = diff["CloseSkland"]["enabled"];
+
+    close_skland_enabled = false;
+
+    return param;
+}
+
 bool proc_argv(int argc, char** argv, bool& debug, std::string& adb, std::string& adb_address, TaskList& tasks,
     MaaAdbControllerType& ctrl_type)
 {
@@ -208,6 +218,7 @@ bool proc_argv(int argc, char** argv, bool& debug, std::string& adb, std::string
         Task task_obj;
         task_obj.name = "MyTask1";
         task_obj.type = "Skland";
+        task_obj.param = skland_param();
         tasks.emplace_back(std::move(task_obj));
 
         ctrl_type = touch << 0 | key << 8 | screencap << 16;

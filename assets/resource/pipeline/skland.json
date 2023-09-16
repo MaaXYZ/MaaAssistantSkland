@@ -27,6 +27,11 @@
         "action": "StartApp",
         "package": "com.hypergryph.skland/com.hypergryph.skland.SplashActivity"
     },
+    "CloseSkland": {
+        "enabled": false,
+        "action": "StopApp",
+        "package": "com.hypergryph.skland"
+    },
     "IgnoreUpdates": {
         "recognition": "OCR",
         "text": [
@@ -113,6 +118,7 @@
         "next": [
             "ReceiveBox_1",
             "NotReceiveBox_1",
+            "CloseSkland",
             "stop"
         ]
     },
@@ -130,6 +136,7 @@
         ],
         "next": [
             "ReceiveBox_2",
+            "CloseSkland",
             "stop"
         ]
     },
@@ -146,6 +153,7 @@
         "next": [
             "ReceiveBox_2",
             "NotReceiveBox_2",
+            "CloseSkland",
             "stop"
         ]
     },
@@ -163,6 +171,7 @@
         ],
         "next": [
             "ReceiveBox_3",
+            "CloseSkland",
             "stop"
         ]
     },
@@ -179,6 +188,7 @@
         "next": [
             "ReceiveBox_3",
             "NotReceiveBox_3",
+            "CloseSkland",
             "stop"
         ]
     },
@@ -196,6 +206,7 @@
         ],
         "next": [
             "ReceiveBox_4",
+            "CloseSkland",
             "stop"
         ]
     },
@@ -212,6 +223,7 @@
         "next": [
             "ReceiveBox_4",
             "NotReceiveBox_4",
+            "CloseSkland",
             "stop"
         ]
     },
@@ -229,6 +241,7 @@
         ],
         "next": [
             "ReceiveBox_5",
+            "CloseSkland",
             "stop"
         ]
     },
@@ -245,6 +258,7 @@
         "next": [
             "ReceiveBox_5",
             "NotReceiveBox_5",
+            "CloseSkland",
             "stop"
         ]
     },
@@ -262,6 +276,7 @@
         ],
         "next": [
             "ReceiveBox_6",
+            "CloseSkland",
             "stop"
         ]
     },
@@ -278,6 +293,7 @@
         "next": [
             "ReceiveBox_6",
             "NotReceiveBox_6",
+            "CloseSkland",
             "stop"
         ]
     },
@@ -295,6 +311,7 @@
         ],
         "next": [
             "ReceiveBox_7",
+            "CloseSkland",
             "stop"
         ]
     },
@@ -311,6 +328,7 @@
         "next": [
             "ReceiveBox_7",
             "NotReceiveBox_7",
+            "CloseSkland",
             "stop"
         ]
     },
@@ -327,6 +345,7 @@
             144
         ],
         "next": [
+            "CloseSkland",
             "stop"
         ]
     },

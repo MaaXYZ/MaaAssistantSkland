@@ -23,6 +23,8 @@ void print_help();
 
 MaaSize scanning_devices();
 
+json::value skland_param();
+
 bool proc_argv(int argc, char** argv, bool& debug, std::string& adb, std::string& adb_address,
                TaskList& tasks, MaaAdbControllerType& ctrl_type);
 
