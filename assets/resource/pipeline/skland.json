@@ -19,31 +19,13 @@
             "NotReceiveBox_3",
             "NotReceiveBox_2",
             "NotReceiveBox_1",
-            "StartSkland"
+            "Sub_StartSkland"
         ]
     },
-    "StartSkland": {
+    "Sub_StartSkland": {
+        "is_sub": true,
         "action": "StartApp",
-        "package": "com.hypergryph.skland/com.hypergryph.skland.SplashActivity",
-        "next": [
-            "IgnoreUpdates",
-            "EnterArknightsPage",
-            "EnterSignInBenefitsPage",
-            "ReceiveBox_1",
-            "ReceiveBox_2",
-            "ReceiveBox_3",
-            "ReceiveBox_4",
-            "ReceiveBox_5",
-            "ReceiveBox_6",
-            "ReceiveBox_7",
-            "NotReceiveBox_7",
-            "NotReceiveBox_6",
-            "NotReceiveBox_5",
-            "NotReceiveBox_4",
-            "NotReceiveBox_3",
-            "NotReceiveBox_2",
-            "NotReceiveBox_1"
-        ]
+        "package": "com.hypergryph.skland/com.hypergryph.skland.SplashActivity"
     },
     "IgnoreUpdates": {
         "recognition": "OCR",
