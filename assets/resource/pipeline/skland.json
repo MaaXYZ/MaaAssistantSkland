@@ -24,13 +24,11 @@
     },
     "Sub_StartSkland": {
         "is_sub": true,
-        "action": "StartApp",
-        "package": "com.hypergryph.skland/com.hypergryph.skland.SplashActivity"
+        "action": "StartApp"
     },
     "CloseSkland": {
         "enabled": false,
-        "action": "StopApp",
-        "package": "com.hypergryph.skland"
+        "action": "StopApp"
     },
     "IgnoreUpdates": {
         "recognition": "OCR",

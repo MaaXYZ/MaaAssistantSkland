@@ -9,6 +9,8 @@ int main(int argc, char** argv)
     bool debug = false;
 	std::string adb;
 	std::string adb_address;
+    std::string package = "com.hypergryph.skland";
+    std::string activity = "com.hypergryph.skland/com.hypergryph.skland.SplashActivity";
 	TaskList tasks;
 	MaaAdbControllerType control_type = 0;
 
@@ -57,6 +59,8 @@ int main(int argc, char** argv)
     MaaBindController(maa_handle, controller_handle);
     int height = 720;
     MaaControllerSetOption(controller_handle, MaaCtrlOption_ScreenshotTargetShortSide, reinterpret_cast<void*>(&height), sizeof(int));
+    MaaControllerSetOption(controller_handle, MaaCtrlOption_DefaultAppPackageEntry, (void*)activity.c_str(), activity.size());
+    MaaControllerSetOption(controller_handle, MaaCtrlOption_DefaultAppPackage, (void*)package.c_str(), package.size());
 
     auto resource_id = MaaResourcePostPath(resource_handle, resource_dir.c_str());
     auto connection_id = MaaControllerPostConnection(controller_handle);
