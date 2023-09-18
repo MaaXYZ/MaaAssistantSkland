@@ -4,6 +4,10 @@ MAS 就是 Maa Assistant Skland
 
 由 [MaaFramework](https://github.com/MaaAssistantArknights/MaaFramework) 强力驱动！
 
+# 适配情况
+
+目前仅适配了 `1280x720 320dpi` 和 `1920x1080 480dpi` 分辨率，其他分辨率尚待测试
+
 ## How to build
 
 **如果你要编译源码才看这节，否则直接 [下载](https://github.com/MaaAssistantArknights/MaaAssistantSkland/releases) 即可**
