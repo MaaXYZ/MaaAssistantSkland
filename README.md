@@ -1,12 +1,54 @@
-# MAS
+<div align="center">
 
-MAS 就是 Maa Assistant Skland
+<img alt="LOGO" src="https://cdn.jsdelivr.net/gh/MaaAssistantArknights/design@main/logo/maa-logo_512x512.png" width="256" height="256" />
+
+# MaaAssistantSkland
+
+MAS 是指 Maa Assistant Skland
+
+基于MAA全新架构的 森空岛 小助手
+
+图像技术 + 模拟控制，解放双手！
 
 由 [MaaFramework](https://github.com/MaaAssistantArknights/MaaFramework) 强力驱动！
+
+</div>
 
 ## 适配情况
 
 目前仅适配了 `1280x720 320dpi` 和 `1920x1080 480dpi` 分辨率，其他分辨率尚待测试
+
+## How to use
+
+> 1. [下载](https://github.com/MaaAssistantArknights/MaaAssistantSkland/releases) 对应平台的压缩包
+> 2. 将压缩包解压到没有中文的目录下
+
+### 基本说明
+
+1. 请根据 [模拟器支持情况](https://maa.plus/docs/1.3-模拟器支持.html)，进行对应的操作。
+2. 按照 [适配情况](#适配情况) 修改模拟器分辨率，一般在模拟器`设置`-`显示`中进行修改。
+
+### 直接使用 
+
+> 以 Windows 用户为主，其他系统请照葫芦画瓢。
+
+1. 首次使用，双击打开 `MAS_CLI.exe` 或 通过 CMD 执行 `MAS_CLI.exe`
+2. 等待扫描设备（设备越多等待时间越长）
+3. 选择需要连接的设备
+4. 开始使用吧！（后续使用除非原先的设备不存在无需再次选择连接的设备）
+
+### 作为MAA结束后脚本使用
+
+> 以 Windows 用户为主，其他系统请照葫芦画瓢。
+
+1. 先按照 [直接使用](#直接使用) 进行操作
+2. 编写批处理文件
+```
+//Todo
+```
+3. 在MAA结束后脚本处填写批处理文件路径
+4. 开始使用吧！
+
 
 ## How to build
 
@@ -45,4 +87,5 @@ _欢迎大佬们来带带~_
 
 ## Join us
 
-吹水 QQ 群：672372860
+用户交流 QQ 群：[MAA 使用 & 粥游交流 QQ 群](https://ota.maa.plus/MaaAssistantArknights/api/qqgroup/index.html)<br>
+技术 & 吹水群（舟无关）：[内卷地狱！(QQ 群)](https://jq.qq.com/?_wv=1027&k=ypbzXcA2)<br>
