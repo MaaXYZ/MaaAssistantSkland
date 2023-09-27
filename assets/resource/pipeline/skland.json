@@ -36,7 +36,10 @@
     "EnterArknightsPage": {
         "recognition": "TemplateMatch",
         "green_mask": true,
-        "template": "Skland/EnterArknightsPage.png",
+        "template": [
+            "Skland/EnterArknightsPage_0.png",
+            "Skland/EnterArknightsPage_1.png"
+        ],
         "roi": [
             204,
             72,
