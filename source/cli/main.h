@@ -21,6 +21,8 @@ using TaskList = std::vector<Task>;
 
 void print_help();
 
+void print_version();
+
 MaaSize scanning_devices();
 
 json::value skland_param();

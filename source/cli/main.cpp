@@ -5,6 +5,7 @@ int main(int argc, char** argv)
     MaaToolKitInit();
 
 	print_help();
+    print_version();
 
     bool debug = false;
 	std::string adb;
@@ -115,6 +116,13 @@ Modify config.json to configure tasks.
 
 Welcome to come and create a GUI for us! :)
 )" << std::endl;
+}
+
+void print_version()
+{
+    std::cout << "MaaFramework Version: " << MaaVersion() << std::endl
+              << "MAS Version: " << MAS_VERSION << std::endl
+              << std::endl;
 }
 
 MaaSize scanning_devices()
