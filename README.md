@@ -100,4 +100,4 @@ _欢迎大佬们来带带~_
 ## Join us
 
 用户交流 QQ 群：[MAA 使用 & 粥游交流 QQ 群](https://ota.maa.plus/MaaAssistantArknights/api/qqgroup/index.html)<br>
-技术 & 吹水群（舟无关）：[内卷地狱！(QQ 群)](https://jq.qq.com/?_wv=1027&k=ypbzXcA2)<br>
+技术（舟无关）：[内卷地狱！(QQ 群)](https://jq.qq.com/?_wv=1027&k=ypbzXcA2)<br>
