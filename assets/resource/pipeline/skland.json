@@ -41,9 +41,9 @@
             "Skland/EnterArknightsPage_1.png"
         ],
         "roi": [
-            204,
+            0,
             72,
-            193,
+            720,
             147
         ],
         "action": "Click",
