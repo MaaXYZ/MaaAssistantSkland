@@ -46,20 +46,46 @@ MAS 是指 Maa Assistant Skland
 1. 先按照 [直接使用](#直接使用) 进行操作
 2. 在MAA目录下新建一个文本文件，在其中填入以下内容
 
-    ```bat
-    @echo off
-    cd D:/Software/MAS
-    MAS_CLI.exe
-    ```
+   ```bat
+   @echo off
+   cd D:/Software/MAS
+   MAS_CLI.exe
+   ```
+
+   - 注意：`D:/Software/MAS` 请替换成你自己的 MAS 目录
+  
+   如果一天只希望执行一次，可以修改成
+
+   ```bat
+   @echo off
+   cd D:/Software/MAS
+   set "date_file=last_run_date.txt"
+   if not exist "%date_file%" (
+     MAS_CLI.exe
+     echo %date% > "%date_file%"
+     exit
+   )
+   
+   set /p last_run_date=<"%date_file%"
+   set "last_run_date=%last_run_date: =%"
+   
+   set current_date=%date%
+   
+   if %current_date% neq %last_run_date% (
+     MAS_CLI.exe
+     echo %current_date% > "%date_file%"
+   )
+   exit
+   ```
 
    - 注意：`D:/Software/MAS` 请替换成你自己的 MAS 目录
 
-3. 将文本文件重命名为 `finish.bat`
+4. 将文本文件重命名为 `finish.bat`
 
     - 如果重命名后没有弹出修改扩展名的二次确认对话框，且文件图标没有变化，请自行搜索“Windows如何显示文件扩展名”。
 
-4. 在MAA `设置`-`游戏设置`-`结束后脚本` 中填入 `finish.bat`
-5. 开始使用吧！
+5. 在MAA `设置`-`游戏设置`-`结束后脚本` 中填入 `finish.bat`
+6. 开始使用吧！
 
 
 ## How to build
