@@ -1,0 +1,16 @@
+{
+  "resource": {
+    "default": {
+      "name": "森空岛",
+      "path": "@default"
+    }
+  },
+  "app": {
+    "start": "com.hypergryph.skland/com.hypergryph.skland.SplashActivity",
+    "stop": "com.hypergryph.skland",
+    "orientation": "portrait",
+    "size": {
+      "short": 720
+    }
+  }
+}
