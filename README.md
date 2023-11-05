@@ -72,6 +72,7 @@ MAS 是指 Maa Assistant Skland
    set "last_run_date=%last_run_date: =%"
 
    set current_date=%date%
+   set "current_date=%current_date: =%"
 
    if %current_date% neq %last_run_date% (
      MAS_CLI.exe
