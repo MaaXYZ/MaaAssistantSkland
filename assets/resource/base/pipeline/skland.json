@@ -1,0 +1,344 @@
+{
+    "Skland": {
+        "next": [
+            "IgnoreUpdates",
+            "EnterArknightsPage",
+            "EnterSignInBenefitsPage",
+            "SignInBenefitsPageFlag",
+            "Sub_StartSkland"
+        ]
+    },
+    "Sub_StartSkland": {
+        "is_sub": true,
+        "action": "StartApp",
+        "package": "com.hypergryph.skland/com.hypergryph.skland.SplashActivity"
+    },
+    "CloseSkland": {
+        "enabled": false,
+        "action": "StopApp",
+        "package": "com.hypergryph.skland"
+    },
+    "IgnoreUpdates": {
+        "recognition": "OCR",
+        "expected": [
+            "下次再说"
+        ],
+        "roi": [
+            260,
+            886,
+            202,
+            133
+        ],
+        "action": "Click",
+        "next": [
+            "EnterArknightsPage"
+        ]
+    },
+    "EnterArknightsPage": {
+        "recognition": "TemplateMatch",
+        "green_mask": true,
+        "template": [
+            "Skland/EnterArknightsPage_0.png",
+            "Skland/EnterArknightsPage_1.png"
+        ],
+        "roi": [
+            0,
+            72,
+            720,
+            147
+        ],
+        "action": "Click",
+        "next": [
+            "EnterSignInBenefitsPage",
+            "SignInBenefitsPageFlag",
+            "EnterArknightsPage"
+        ]
+    },
+    "EnterSignInBenefitsPage": {
+        "recognition": "TemplateMatch",
+        "template": "Skland/EnterSignInBenefitsPage.png",
+        "roi": [
+            13,
+            222,
+            178,
+            176
+        ],
+        "action": "Click",
+        "next": [
+            "SignInBenefitsPageFlag"
+        ]
+    },
+    "SignInBenefitsPageFlag": {
+        "recognition": "TemplateMatch",
+        "template": "Skland/SignInBenefitsPageFlag.png",
+        "roi": [
+            479,
+            538,
+            193,
+            179
+        ],
+        "next": [
+            "ReceiveBox_1",
+            "ReceiveBox_2",
+            "ReceiveBox_3",
+            "ReceiveBox_4",
+            "ReceiveBox_5",
+            "ReceiveBox_6",
+            "ReceiveBox_7",
+            "NotReceiveBox_7",
+            "NotReceiveBox_6",
+            "NotReceiveBox_5",
+            "NotReceiveBox_4",
+            "NotReceiveBox_3",
+            "NotReceiveBox_2",
+            "NotReceiveBox_1",
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "ReceiveBox_1": {
+        "recognition": "TemplateMatch",
+        "template": "Skland/Receive.png",
+        "roi": [
+            65,
+            404,
+            150,
+            147
+        ],
+        "action": "Click",
+        "next": [
+            "ReceiveBox_1",
+            "NotReceiveBox_1",
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "NotReceiveBox_1": {
+        "recognition": "OCR",
+        "expected": [
+            "已",
+            "领取"
+        ],
+        "roi": [
+            65,
+            404,
+            150,
+            147
+        ],
+        "next": [
+            "ReceiveBox_2",
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "ReceiveBox_2": {
+        "recognition": "TemplateMatch",
+        "template": "Skland/Receive.png",
+        "roi": [
+            214,
+            405,
+            144,
+            145
+        ],
+        "action": "Click",
+        "next": [
+            "ReceiveBox_2",
+            "NotReceiveBox_2",
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "NotReceiveBox_2": {
+        "recognition": "OCR",
+        "expected": [
+            "已",
+            "领取"
+        ],
+        "roi": [
+            214,
+            405,
+            144,
+            145
+        ],
+        "next": [
+            "ReceiveBox_3",
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "ReceiveBox_3": {
+        "recognition": "TemplateMatch",
+        "template": "Skland/Receive.png",
+        "roi": [
+            359,
+            404,
+            145,
+            146
+        ],
+        "action": "Click",
+        "next": [
+            "ReceiveBox_3",
+            "NotReceiveBox_3",
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "NotReceiveBox_3": {
+        "recognition": "OCR",
+        "expected": [
+            "已",
+            "领取"
+        ],
+        "roi": [
+            359,
+            404,
+            145,
+            146
+        ],
+        "next": [
+            "ReceiveBox_4",
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "ReceiveBox_4": {
+        "recognition": "TemplateMatch",
+        "template": "Skland/Receive.png",
+        "roi": [
+            507,
+            405,
+            143,
+            144
+        ],
+        "action": "Click",
+        "next": [
+            "ReceiveBox_4",
+            "NotReceiveBox_4",
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "NotReceiveBox_4": {
+        "recognition": "OCR",
+        "expected": [
+            "已",
+            "领取"
+        ],
+        "roi": [
+            507,
+            405,
+            143,
+            144
+        ],
+        "next": [
+            "ReceiveBox_5",
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "ReceiveBox_5": {
+        "recognition": "TemplateMatch",
+        "template": "Skland/Receive.png",
+        "roi": [
+            68,
+            555,
+            146,
+            146
+        ],
+        "action": "Click",
+        "next": [
+            "ReceiveBox_5",
+            "NotReceiveBox_5",
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "NotReceiveBox_5": {
+        "recognition": "OCR",
+        "expected": [
+            "已",
+            "领取"
+        ],
+        "roi": [
+            68,
+            555,
+            146,
+            146
+        ],
+        "next": [
+            "ReceiveBox_6",
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "ReceiveBox_6": {
+        "recognition": "TemplateMatch",
+        "template": "Skland/Receive.png",
+        "roi": [
+            214,
+            555,
+            143,
+            144
+        ],
+        "action": "Click",
+        "next": [
+            "ReceiveBox_6",
+            "NotReceiveBox_6",
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "NotReceiveBox_6": {
+        "recognition": "OCR",
+        "expected": [
+            "已",
+            "领取"
+        ],
+        "roi": [
+            214,
+            555,
+            143,
+            144
+        ],
+        "next": [
+            "ReceiveBox_7",
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "ReceiveBox_7": {
+        "recognition": "TemplateMatch",
+        "template": "Skland/Receive.png",
+        "roi": [
+            361,
+            555,
+            142,
+            144
+        ],
+        "action": "Click",
+        "next": [
+            "ReceiveBox_7",
+            "NotReceiveBox_7",
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "NotReceiveBox_7": {
+        "recognition": "OCR",
+        "expected": [
+            "已",
+            "领取"
+        ],
+        "roi": [
+            361,
+            555,
+            142,
+            144
+        ],
+        "next": [
+            "CloseSkland",
+            "Stop"
+        ]
+    },
+    "Stop": {}
+}
