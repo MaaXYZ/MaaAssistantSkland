@@ -11,7 +11,7 @@
     "Sub_StartSkland": {
         "is_sub": true,
         "action": "StartApp",
-        "package": "com.hypergryph.skland/com.hypergryph.skland.SplashActivity"
+        "package": "com.hypergryph.skland/com.hypergryph.skland.SchemeActivity"
     },
     "CloseSkland": {
         "enabled": false,
@@ -43,7 +43,7 @@
         ],
         "roi": [
             0,
-            72,
+            52,
             720,
             147
         ],
@@ -55,13 +55,13 @@
         ]
     },
     "EnterSignInBenefitsPage": {
-        "recognition": "TemplateMatch",
+        "recognition": "FeatureMatch",
         "template": "Skland/EnterSignInBenefitsPage.png",
         "roi": [
             13,
             222,
             178,
-            176
+            376
         ],
         "action": "Click",
         "next": [
