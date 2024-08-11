@@ -34,12 +34,13 @@ MAS 是指 Maa Assistant Skland
 
 1. 使用前，前往[森空岛官网](https://www.skland.com/)下载森空岛APP
 2. 在模拟器上安装并登录森空岛APP
-3. 首次使用，打开模拟器，双击打开 `MAS_CLI.exe` 或 通过 CMD 执行 `MAS_CLI.exe`
+3. 首次使用，打开模拟器，双击打开 `MaaPiCli.exe` 或 通过 CMD 执行 `MaaPiCli.exe`
+4. 选择ADB（本教程以 `Auto detect` 为例）
 4. 等待扫描设备（设备越多等待时间越长）
 5. 选择需要连接的设备
 6. 开始使用吧！
 
-   - 后续使用除非需要连接的设备不存在，否则无需再次选择设备
+> 添加 `-d` 参数可跳过交互直接运行任务，如 `./MaaPiCli.exe -d`
 
 ### 作为MAA结束后脚本使用
 
@@ -51,10 +52,10 @@ MAS 是指 Maa Assistant Skland
    ```bat
    @echo off
    cd D:/Software/MAS
-   MAS_CLI.exe
+   MaaPiCli.exe -d
    ```
 
-   - 注意：`D:/Software/MAS` 请替换成你自己的 MAS 目录
+> 注意：`D:/Software/MAS` 请替换成你自己的 MAS 目录
   
    如果一天只希望执行一次，可以修改成
 
@@ -63,7 +64,7 @@ MAS 是指 Maa Assistant Skland
    cd D:/Software/MAS
    set "date_file=last_run_date.txt"
    if not exist "%date_file%" (
-     MAS_CLI.exe
+     MaaPiCli.exe -d
      echo %date% > "%date_file%"
      exit
    )
@@ -75,19 +76,20 @@ MAS 是指 Maa Assistant Skland
    set "current_date=%current_date: =%"
 
    if %current_date% neq %last_run_date% (
-     MAS_CLI.exe
+     MaaPiCli.exe -d
      echo %current_date% > "%date_file%"
    )
    exit
    ```
 
-   - 注意：`D:/Software/MAS` 请替换成你自己的 MAS 目录
+> 注意：`D:/Software/MAS` 请替换成你自己的 MAS 目录
 
 3. 将文本文件重命名为 `finish.bat`
 
-    - 如果重命名后没有弹出修改扩展名的二次确认对话框，且文件图标没有变化，请自行搜索“Windows如何显示文件扩展名”。
+> 如果重命名后没有弹出修改扩展名的二次确认对话框，且文件图标没有变化，请自行搜索“Windows如何显示文件扩展名”。
 
 4. 在MAA `设置`-`连接设置`-`结束后脚本` 中填入 `finish.bat`
+
 5. 开始使用吧！
 
 
@@ -97,33 +99,25 @@ MAS 是指 Maa Assistant Skland
 
 _欢迎大佬们来带带~_
 
+0. 完整克隆本项目及子项目
+
+    ```bash
+    git clone --recursive https://github.com/MaaXYZ/MaaAssistantSkland.git
+    ```
+
 1. 下载 MaaFramework 的 [Release 包](https://github.com/MaaAssistantArknights/MaaFramework/releases)，解压到 `deps` 文件夹中
-2. 配置 cmake
 
-    - Windows  
-
-    ```bash
-    cmake --preset "MSVC 2022"
-    ```
-
-    - Linux / macOS
+2. 安装
 
     ```bash
-    cmake --preset "NinjaMulti"
+    python install.py
     ```
 
-3. 使用 cmake 构建工程  
-
-    ```bash
-    cmake --build build --config Release
-    cmake --install build --prefix install
-    ```
-
-    生成的二进制及相关资源文件在 `install` 目录下
+    安装的二进制及相关资源文件在 `install` 目录下
 
 ## 开发相关
 
-- `tools/ImageCropper` 可以用来裁剪图片和获取 ROI
+- `deps/tools/ImageCropper` 可以用来裁剪图片和获取 ROI
 - Pipeline 协议请参考 [MaaFramework 的文档](https://github.com/MaaAssistantArknights/MaaFramework/blob/main/docs/zh_cn/3.1-%E4%BB%BB%E5%8A%A1%E6%B5%81%E6%B0%B4%E7%BA%BF%E5%8D%8F%E8%AE%AE.md)
 
 ## Join us
