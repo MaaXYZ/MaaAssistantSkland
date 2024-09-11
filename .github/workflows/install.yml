@@ -63,11 +63,11 @@ jobs:
           submodules: true
 
       - name: Download MaaFramework
-        uses: robinraju/release-downloader@v1.8
+        uses: robinraju/release-downloader@v1.11
         with:
           repository: MaaXYZ/MaaFramework
           fileName: "MAA-win-${{ matrix.arch }}*"
-          latest: true
+          tag: "v1.8.9"
           out-file-path: "deps"
           extract: true
 
@@ -95,11 +95,11 @@ jobs:
           submodules: true
 
       - name: Download MaaFramework
-        uses: robinraju/release-downloader@v1.8
+        uses: robinraju/release-downloader@v1.11
         with:
           repository: MaaXYZ/MaaFramework
           fileName: "MAA-linux-${{ matrix.arch }}*"
-          latest: true
+          tag: "v1.8.9"
           out-file-path: "deps"
           extract: true
 
@@ -127,11 +127,11 @@ jobs:
           submodules: true
 
       - name: Download MaaFramework
-        uses: robinraju/release-downloader@v1.8
+        uses: robinraju/release-downloader@v1.11
         with:
           repository: MaaXYZ/MaaFramework
           fileName: "MAA-macos-${{ matrix.arch }}*"
-          latest: true
+          tag: "v1.8.9"
           out-file-path: "deps"
           extract: true
 
