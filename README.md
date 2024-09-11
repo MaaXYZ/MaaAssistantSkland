@@ -4,6 +4,9 @@
 
 # MaaAssistantSkland
 
+![MaaFramework](https://img.shields.io/badge/MaaFramework-v1.8.9-blue)
+![Pipeline](https://img.shields.io/badge/Pipeline-%23454545?logo=codecademy&logoColor=%23FFFFFF&color=%23454545)
+
 MAS 是指 Maa Assistant Skland
 
 基于MAA全新架构的 森空岛 小助手
